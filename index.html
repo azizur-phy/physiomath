@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Azizur Rahman – Lecturer in Physics</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;600&display=swap">
+<style>
+:root{--bg:#eef2ff;--g1:#e6efff;--g2:#f1eaff;--g3:#fff2e2;--surface:#fff;--ink:#14213d;--muted:#55607a;--line:#dde2ee;--acc:#2457d6;--acc-ink:#fff;--gold:#c98a0a;--wave1:#2457d6;--wave2:#c98a0a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1426;--g1:#0b1226;--g2:#161b42;--g3:#241a3d;--surface:#161e33;--ink:#e8ecf7;--muted:#9aa5c2;--line:#27314d;--acc:#6f95ff;--acc-ink:#0e1424;--gold:#f0b43a;--wave1:#6f95ff;--wave2:#f0b43a}}
+:root[data-theme="dark"]{--bg:#0e1426;--g1:#0b1226;--g2:#161b42;--g3:#241a3d;--surface:#161e33;--ink:#e8ecf7;--muted:#9aa5c2;--line:#27314d;--acc:#6f95ff;--acc-ink:#0e1424;--gold:#f0b43a;--wave1:#6f95ff;--wave2:#f0b43a}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg) linear-gradient(160deg,var(--g1) 0%,var(--g2) 50%,var(--g3) 100%) fixed;color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.3rem,6vw,4rem)}h2{font-size:clamp(1.7rem,3.5vw,2.4rem)}h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:62ch}a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+section{padding:clamp(40px,7vw,72px) 0;border-top:1px solid var(--line)}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px}
+nav .brand{font-family:Newsreader,serif;font-weight:600;font-size:1.15rem;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav li a{display:block;padding:10px 0;color:var(--muted);text-decoration:none;font-size:.92rem;white-space:nowrap}
+nav li a:hover{color:var(--acc)}
+.btn{min-height:44px;display:inline-block;background:var(--acc);color:var(--acc-ink);padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:600}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.hero{padding:48px 0 0;border:0}
+.hero .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
+.hero .lead{font-size:1.15rem;color:var(--muted)}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+canvas{width:100%;display:block;border-radius:6px}
+.ctrl{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:.9rem;color:var(--muted)}
+.ctrl input{flex:1;accent-color:var(--acc)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card .meta{color:var(--muted);font-size:.88rem;margin:0 0 .6em}
+.card p{margin-bottom:.6em}
+.tag{display:inline-block;font-size:.8rem;padding:2px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.notice{list-style:none;padding:0;margin:24px 0 0;border-left:3px solid var(--gold)}
+.notice li{padding:12px 18px;border-bottom:1px solid var(--line)}
+.notice time{display:block;color:var(--muted);font-size:.85rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.price{font-family:Newsreader,serif;font-size:2rem;font-weight:600}
+.coach{background:var(--surface);border-radius:12px;border:1px solid var(--line);padding:32px}
+form{display:grid;gap:12px}
+label{font-size:.9rem;font-weight:500;display:grid;gap:4px}
+input,select{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.pay{list-style:none;padding:0;margin:0 0 1em}.pay li{padding:8px 0;border-bottom:1px solid var(--line)}
+.avatar{width:120px;height:120px;border-radius:50%;background:var(--acc);color:var(--acc-ink);display:grid;place-items:center;font:600 2.4rem Newsreader,serif;margin-bottom:16px}
+.bn{font-family:"Noto Sans Bengali","Public Sans",sans-serif;font-size:12pt;line-height:1.8}.bn time{font-family:"Public Sans",sans-serif}
+.mf{flex:none;width:44px;height:44px;border-radius:10px;background:var(--c);color:#fff;display:grid;place-items:center;font:700 .85rem "Public Sans",sans-serif}
+.pay li{display:flex;align-items:center;gap:14px}
+.login{max-width:420px}.err{color:#c0392b;min-height:1.4em;margin:0;font-size:.92rem}
+.dash dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:16px 0}.dash dt{color:var(--muted)}.dash dd{margin:0;font-weight:500}
+.dash ul{padding-left:20px}[hidden]{display:none!important}
+.offer{border:0;padding:clamp(20px,4vw,40px) 0 0}
+.poster{position:relative;overflow:hidden;border-radius:16px;background:linear-gradient(135deg,#14213d,#2457d6 75%);color:#fff;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,4vw,48px);align-items:center}
+.poster>*{position:relative}.poster .pw{position:absolute;left:0;right:0;bottom:0;width:100%;height:55%;opacity:.14;pointer-events:none}
+.poster .big{font:600 clamp(4.5rem,14vw,8rem)/.9 Newsreader,Georgia,serif;color:#ffcf5c}
+.poster .big small{display:block;font-size:.3em;color:#fff;margin-top:6px}
+.poster h2{color:#fff;margin-bottom:.3em}.poster p{color:#e3e9fb}
+.poster .was{text-decoration:line-through;opacity:.75}.poster .now{font:600 2.2rem Newsreader,Georgia,serif;color:#fff}
+.poster .left{display:inline-block;background:rgba(255,255,255,.16);padding:4px 12px;border-radius:99px;font-size:.9rem;margin-bottom:12px}
+.poster .btn{background:#ffcf5c;color:#14213d}
+.offer-ended .o-on,.offer-ended #offer{display:none}html:not(.offer-ended) .o-off{display:none}
+@media(max-width:640px){.poster{grid-template-columns:1fr;text-align:left}}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+.card,.panel,.coach{overflow-wrap:anywhere}nav ul{scrollbar-width:none}nav ul::-webkit-scrollbar{display:none}
+@media(max-width:900px){.hero .grid,.two{grid-template-columns:1fr}.hero{padding-top:32px}}
+@media(max-width:640px){nav{flex-wrap:wrap;gap:0;padding-top:8px}nav ul{width:100%;gap:18px;padding-bottom:2px}.hero .cta .btn{flex:1 1 100%;text-align:center}.coach{padding:20px}.dash dl{grid-template-columns:1fr;gap:2px}.dash dd{margin-bottom:10px}.cards{grid-template-columns:1fr}.mf{width:40px;height:40px}.bn{font-size:12pt}}
+@media(min-width:1400px){body{font-size:1.06rem}.wrap{max-width:1240px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#top">Azizur Rahman</a>
+<ul><li><a href="#classes">Classes</a></li><li><a href="#syllabus">Syllabus</a></li><li><a href="#animations">Animations</a></li><li><a href="#research">Research</a></li><li><a href="#notices">Notices</a></li><li><a href="#coaching">Coaching</a></li><li><a href="#portal">Student login</a></li><li><a href="#profile">Profile</a></li></ul>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap grid">
+<div>
+<h1>Physics, taught so it can be seen.</h1>
+<p class="lead">Lecturer in Physics at Lion Jahangir Alam Manik Mohila College. I teach XI and XII physics and run a coaching batch for students who want a stronger foundation.</p>
+<div class="cta"><a class="btn" href="#coaching">Join coaching</a><a class="btn alt" href="#classes">View classes</a></div>
+</div>
+<div class="panel">
+<canvas id="wave" width="560" height="260" aria-label="Two waves and their sum"></canvas>
+<div class="ctrl"><label for="f" style="display:contents">Second wave frequency</label><input id="f" type="range" min="1" max="8" step="0.1" value="1.3"></div>
+</div>
+</div></section>
+
+<section id="offer" class="offer"><div class="wrap"><div class="poster">
+<svg class="pw" viewBox="0 0 800 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 Q50 20 100 100 T200 100 T300 100 T400 100 T500 100 T600 100 T700 100 T800 100" fill="none" stroke="#fff" stroke-width="3"/></svg>
+<div class="big">20%<small>discount</small></div>
+<div>
+<span class="left" id="left">Limited-time offer</span>
+<h2>Class XI &amp; XII Physics Coaching</h2>
+<p>Enroll by 1 December 2026 and get 20% off the monthly fee. Classes on Sunday, Tuesday and Thursday at 2:30 pm, starting 1 January 2027.</p>
+<p><span class="was">৳ 1,200</span> &nbsp;<span class="now">৳ 960</span> per month</p>
+<a class="btn" href="#coaching">Enroll now</a>
+</div></div></div></section>
+
+<section id="classes"><div class="wrap">
+<h2>Classes</h2>
+<p>Physics for Class XI and XII. The course starts on 1 January 2027.</p>
+<div class="cards">
+<article class="card"><h3>Class XI Physics</h3><p class="meta">Sunday, Tuesday, Thursday · 2:30 pm</p><p>Foundations of mechanics, heat, waves and the concepts that the XII syllabus builds on.</p></article>
+<article class="card"><h3>Class XII Physics</h3><p class="meta">Sunday, Tuesday, Thursday · 2:30 pm</p><p>Electricity, magnetism, modern physics and exam-focused problem solving.</p></article>
+</div></div></section>
+
+<section id="syllabus"><div class="wrap">
+<h2>Syllabus: XI &amp; XII Physics</h2>
+<p>Chapter index for the two papers. Chapters are covered in this order during the course.</p>
+<div class="cards">
+<article class="card"><h3>Class XI: Physics 1st Paper</h3>
+<ol>
+<li>Physical World and Measurement</li>
+<li>Vectors</li>
+<li>Dynamics</li>
+<li>Newtonian Mechanics</li>
+<li>Work, Energy and Power</li>
+<li>Gravitation and Gravity</li>
+<li>Structural Properties of Matter</li>
+<li>Periodic Motion</li>
+<li>Waves</li>
+<li>Ideal Gas and Kinetic Theory of Gases</li>
+</ol></article>
+<article class="card"><h3>Class XII: Physics 2nd Paper</h3>
+<ol>
+<li>Thermodynamics</li>
+<li>Static Electricity</li>
+<li>Current Electricity</li>
+<li>Magnetic Effects of Current and Magnetism</li>
+<li>Electromagnetic Induction and Alternating Current</li>
+<li>Geometrical Optics</li>
+<li>Physical Optics</li>
+<li>Introduction to Modern Physics</li>
+<li>Atomic Models and Nuclear Physics</li>
+<li>Semiconductors and Electronics</li>
+<li>Astronomy</li>
+</ol></article>
+</div></div></section>
+
+<section id="animations"><div class="wrap two">
+<div>
+<h2>Animations</h2>
+<p>Interactive simulations I use in class. Change the pendulum length and watch the period change: T = 2π√(L/g).</p>
+<p>Add your own simulations or YouTube links here.</p>
+<div class="ctrl"><label for="L" style="display:contents">Length</label><input id="L" type="range" min="0.5" max="3" step="0.05" value="1.5"><span id="T"></span></div>
+</div>
+<div class="panel"><canvas id="pend" width="420" height="300" aria-label="Pendulum simulation"></canvas></div>
+</div></section>
+
+<section id="research"><div class="wrap">
+<h2>Research</h2>
+<p>Research papers and publications will be added here soon.</p></div></section>
+
+<section id="notices"><div class="wrap">
+<h2>Notices</h2>
+<ul class="notice">
+<li class="bn o-on"><time>২১ নভেম্বর ২০২৬</time>২০% ছাড়! ১ ডিসেম্বর ২০২৬ পর্যন্ত ভর্তি হলে মাসিক ফি ৯৬০ টাকা (সাধারণ ফি ১২০০ টাকা)।</li>
+<li class="bn"><time>২১ নভেম্বর ২০২৬</time>একাদশ ও দ্বাদশ শ্রেণির পদার্থবিজ্ঞান কোর্স ১ জানুয়ারি ২০২৭ থেকে শুরু হবে। শিক্ষার্থীদের ২৭ ডিসেম্বর ২০২৬-এর মধ্যে ভর্তি হতে হবে।</li>
+<li class="bn"><time>২১ নভেম্বর ২০২৬</time>ক্লাস হবে রবি, মঙ্গল ও বৃহস্পতিবার বিকাল ২:৩০ টায়। মাসিক ফি ১২০০ টাকা।</li>
+<li class="bn"><time>২১ নভেম্বর ২০২৬</time>ভর্তির জন্য নিচের কোচিং অংশে ফি পাঠিয়ে ট্রানজেকশন আইডিসহ ফর্মটি পূরণ করুন।</li>
+</ul></div></section>
+
+<section id="coaching"><div class="wrap"><div class="coach two">
+<div>
+<h2>Physics coaching</h2>
+<p>For Class XI and XII students. Classes run on Sunday, Tuesday and Thursday at 2:30 pm. The course starts on 1 January 2027. Enroll by 27 December 2026.</p>
+<p class="price"><span class="o-on"><s style="font-size:1.1rem;color:var(--muted)">৳ 1,200</s> ৳ 960</span><span class="o-off">৳ 1,200</span> <span style="font-size:1rem;font-weight:400;color:var(--muted)">per month</span></p>
+<p>Send the fee by mobile banking, then submit the form with your transaction ID. Your seat is confirmed after the payment is verified.</p>
+<ul class="pay">
+<li><span class="mf" style="--c:#e2136e">bK</span><span><strong>bKash</strong><br>01850755094</span></li>
+<li><span class="mf" style="--c:#e8452c">Ng</span><span><strong>Nagad</strong><br>01850755094</span></li>
+<li><span class="mf" style="--c:#8c3494">Rk</span><span><strong>Rocket</strong><br>018507550947</span></li>
+<li><span class="mf" style="--c:#d4a900">Up</span><span><strong>Upay</strong><br>01850755094</span></li>
+<li><span class="mf" style="--c:#0a7a3d">Cf</span><span><strong>Cellfin</strong><br>01850755094</span></li>
+<li><span class="mf" style="--c:#55607a">MF</span><span><strong>Other mobile banking</strong><br>01850755094</span></li>
+</ul>
+</div>
+<form id="enroll">
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+<label>Batch<select name="batch"><option>Class XI Physics</option><option>Class XII Physics</option></select></label>
+<label>Payment method<select name="method"><option>bKash</option><option>Nagad</option><option>Rocket</option><option>Upay</option><option>Cellfin</option><option>Other mobile banking</option></select></label>
+<label>Transaction ID<input name="trx" required></label>
+<button class="btn" type="submit">Send enrollment on WhatsApp</button>
+</form>
+</div></div></section>
+
+<section id="portal"><div class="wrap">
+<h2>Student login</h2>
+<div id="loginBox" class="card login">
+<p>Enrolled students can sign in to see their class, fee status and study materials. Your Student ID and password are given by your teacher after enrollment.</p>
+<form id="loginForm">
+<label>Student ID<input id="sid" required autocomplete="username" autocapitalize="none"></label>
+<label>Password<input id="spw" type="password" required autocomplete="current-password"></label>
+<p class="err" id="lerr" role="alert"></p>
+<button class="btn" type="submit">Sign in</button>
+</form></div>
+<div id="dash" class="card dash" hidden>
+<h3 id="dName"></h3>
+<dl><dt>Class</dt><dd id="dCls"></dd><dt>Fee status</dt><dd id="dFee"></dd></dl>
+<p id="dNote"></p>
+<h3>Study materials</h3><ul id="dMat"></ul>
+<button class="btn alt" id="logout" type="button">Sign out</button>
+</div>
+</div></section>
+
+<section id="profile"><div class="wrap two">
+<div><div class="avatar" aria-hidden="true">AR</div>
+<h2>Profile</h2>
+<p>Azizur Rahman is a Lecturer in Physics at Lion Jahangir Alam Manik Mohila College. He teaches XI and XII physics and runs a coaching batch for students.</p></div>
+<div>
+<h3>Contact</h3>
+<p>Email: <a href="mailto:azizur.phy.cuet@gmail.com">azizur.phy.cuet@gmail.com</a><br>WhatsApp: <a href="https://wa.me/8801559471429">01559471429</a><br>Lion Jahangir Alam Manik Mohila College</p>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Azizur Rahman. Lecturer in Physics, Lion Jahangir Alam Manik Mohila College.</div></footer>
+
+<script>
+(function(){
+var css=function(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()};
+var still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function fit(c){var r=devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight||c.height*w/c.width;c.style.height=h+"px";c.width=w*r;c.height=h*r;var x=c.getContext("2d");x.setTransform(r,0,0,r,0,0);return{x:x,w:w,h:h}}
+var wc=document.getElementById("wave"),pc=document.getElementById("pend"),fs=document.getElementById("f"),ls=document.getElementById("L");
+var W,P,t=0,ang=0,vel=0,last=0;
+function size(){wc.style.height="";pc.style.height="";W=fit(wc);P=fit(pc)}
+size();addEventListener("resize",size);
+function drawWave(){var x=W.x,w=W.w,h=W.h,f=+fs.value;x.clearRect(0,0,w,h);
+x.strokeStyle=css("--line");x.beginPath();x.moveTo(0,h/2);x.lineTo(w,h/2);x.stroke();
+function line(fn,col,lw){x.strokeStyle=col;x.lineWidth=lw;x.beginPath();for(var i=0;i<=w;i+=2){var u=i/w*4*Math.PI,y=h/2-fn(u)*h*.2;i?x.lineTo(i,y):x.moveTo(i,y)}x.stroke()}
+line(function(u){return Math.sin(u-t)},css("--wave1"),1.5);
+line(function(u){return Math.sin(f*u-t*f)},css("--wave2"),1.5);
+line(function(u){return (Math.sin(u-t)+Math.sin(f*u-t*f))/2*1.6},css("--ink"),2.5)}
+function drawPend(dt){var x=P.x,w=P.w,h=P.h,L=+ls.value,g=9.8;
+for(var k=0;k<4;k++){var a=-g/L*Math.sin(ang);vel+=a*dt/4;ang+=vel*dt/4}
+x.clearRect(0,0,w,h);var px=w/2,py=20,s=(h-70)/3*L,bx=px+s*Math.sin(ang),by=py+s*Math.cos(ang);
+x.strokeStyle=css("--muted");x.lineWidth=2;x.beginPath();x.moveTo(px-30,py);x.lineTo(px+30,py);x.stroke();
+x.beginPath();x.moveTo(px,py);x.lineTo(bx,by);x.stroke();
+x.fillStyle=css("--gold");x.beginPath();x.arc(bx,by,14,0,7);x.fill()}
+function loop(ts){var dt=Math.min((ts-last)/1000||0,.05);last=ts;t+=dt*2;drawWave();drawPend(dt);if(!still)requestAnimationFrame(loop)}
+function upd(){document.getElementById("T").textContent="T = "+(2*Math.PI*Math.sqrt(+ls.value/9.8)).toFixed(2)+" s";ang=Math.min(.6,.6);vel=0;if(still){drawWave();drawPend(0)}}
+ls.addEventListener("input",upd);fs.addEventListener("input",function(){if(still)drawWave()});
+ang=.6;upd();requestAnimationFrame(loop);
+document.getElementById("enroll").addEventListener("submit",function(e){e.preventDefault();var d=new FormData(e.target);
+var m="Coaching enrollment%0AName: "+encodeURIComponent(d.get("name"))+"%0APhone: "+encodeURIComponent(d.get("phone"))+"%0ABatch: "+encodeURIComponent(d.get("batch"))+"%0APaid via: "+encodeURIComponent(d.get("method"))+"%0ATransaction ID: "+encodeURIComponent(d.get("trx"));
+window.open("https://wa.me/8801559471429?text="+m,"_blank")});
+var DB={"demo01":{"s":"aD+o3EwRNsb0GRj2WZGRSg==","i":"ONP1wRgMYQUQSkDm","c":"+s6eJWHL1LALEW3BZtGYcff5AxitUmkV2NrKDBX0Wz9AOI1E8Ign0T1flX1DYKYA4Gq+3IISTpV+HOHafkMwau2MC/JAXVpe8Qvc9o5KArbKko14a4QcE8X9k5kAeWW3xmcg7w97JPYIJyc1k0W9jaV9yWj2YieHg43PunCfaOfYLPzAyFuupxhDFjdeeO3AYyVxmkP9CAJRyW4L8hoqoEUYl28eZxhj0Ks10wMVlHOLHbAQNthUatXEgxXXQYUZ9n7GOy8j+ItVAPZoTHWSAqhlo0trJaQkvnPvdjZSQ3iikCg1KytooXsE4yteF+d7CEdSEN99TQ060tfh9i4q7KC56gVZ"}};
+function b64(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})}
+async function unlock(id,pw){var r=DB[id];if(!r)throw 0;var te=new TextEncoder();
+var km=await crypto.subtle.importKey("raw",te.encode(pw),"PBKDF2",false,["deriveKey"]);
+var k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b64(r.s),iterations:200000,hash:"SHA-256"},km,{name:"AES-GCM",length:256},false,["decrypt"]);
+var pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:b64(r.i)},k,b64(r.c));return JSON.parse(new TextDecoder().decode(pt))}
+var lf=document.getElementById("loginForm"),le=document.getElementById("lerr");
+lf.addEventListener("submit",async function(e){e.preventDefault();le.textContent="";var b=lf.querySelector("button");b.disabled=true;
+try{if(!window.crypto||!crypto.subtle)throw 1;
+var d=await unlock(document.getElementById("sid").value.trim().toLowerCase(),document.getElementById("spw").value);
+document.getElementById("dName").textContent="Welcome, "+d.name;
+document.getElementById("dCls").textContent=d.cls;document.getElementById("dFee").textContent=d.fee;
+document.getElementById("dNote").textContent=d.note||"";
+var ul=document.getElementById("dMat");ul.textContent="";
+(d.materials||[]).forEach(function(m){if(!/^https?:\/\//.test(m.u))return;var li=document.createElement("li"),a=document.createElement("a");a.href=m.u;a.target="_blank";a.rel="noopener";a.textContent=m.t;li.appendChild(a);ul.appendChild(li)});
+document.getElementById("loginBox").hidden=true;document.getElementById("dash").hidden=false;lf.reset()}
+catch(x){le.textContent="Student ID or password is incorrect."}
+b.disabled=false});
+document.getElementById("logout").addEventListener("click",function(){document.getElementById("dash").hidden=true;document.getElementById("loginBox").hidden=false});var end=new Date(2026,11,2),nw=new Date();
+if(nw>=end){document.documentElement.classList.add("offer-ended")}else{var dl=Math.ceil((end-nw)/864e5);document.getElementById("left").textContent=dl<=1?"Last day of the offer":dl+" days left"}
+})();
+</script>
+</body>
+</html>
